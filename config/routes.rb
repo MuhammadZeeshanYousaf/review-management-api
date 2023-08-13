@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
+  resource :business
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
