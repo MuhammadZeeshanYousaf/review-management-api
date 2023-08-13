@@ -10,7 +10,9 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  resource :business
+  resource :business do
+    resources :reviews
+  end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
