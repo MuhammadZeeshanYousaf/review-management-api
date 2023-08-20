@@ -10,9 +10,10 @@ Rails.application.routes.draw do
       sessions: 'users/sessions',
       registrations: 'users/registrations'
     }
-
-    resource :business do
-      resources :reviews
+    scope as: :api do
+      resource :business do
+        resources :reviews
+      end
     end
   end
 
